@@ -10,7 +10,7 @@ class EmailParser
   end
 
   def parse
-    result = @email_string.split(" " | ",")
+    result = @email_string.split(/,|\s/)
 
     resul
   end
