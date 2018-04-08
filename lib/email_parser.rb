@@ -6,10 +6,12 @@ class EmailParser
   attr_accessor :email_string
 
   def initialize(email_string)
-    @parser = email_string
+    @email_string = email_string
   end
 
   def parse
+    result = @email_string.split(/[\s,]/)
 
+    result
   end
 end
